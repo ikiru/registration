@@ -7,19 +7,11 @@ import { User } from "./user";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "app";
-  users = [];
   user = new User();
-  // user = {
-  //   firstname: "",
-  //   lastname: "",
-  //   email: "",
-  //   password: "",
-  //   address: "",
-  //   unit: "",
-  //   city: "",
-  //   state: "",
-  //   yes: "",
-  //   no: ""
-  // };
+  users = [];
+
+  onSubmit() {
+    this.users.push(this.user);
+    this.user = new User();
+  }
 }
