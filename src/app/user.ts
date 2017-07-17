@@ -9,5 +9,5 @@ export class User {
     public unit: string = "",
     public city: string = "",
     public state: string = ""
-  );
+  ) {}
 }
